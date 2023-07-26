@@ -1,10 +1,10 @@
 import { Footer } from "./Footer"
-import { Header } from "./Header/Header"
+import { MyHeader } from "./Header/Header"
 
 export const Layout = ({ children }: any) => {
   return(
     <>
-      <Header />
+      <MyHeader title="Dio Bank" />
       { children }
       <Footer />
     </>

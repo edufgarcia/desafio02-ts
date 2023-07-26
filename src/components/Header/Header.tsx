@@ -1,9 +1,19 @@
 import './Header.css'
+import { 
+  Center,
+  Heading
+} from '@chakra-ui/react'
 
-export const Header  = () => {
+interface IHeader {
+  title: String
+}
+
+export const MyHeader = ({title}:IHeader) => {
   return(
-    <div className='header'>
-      Dio Bank
-    </div>
+    <Center>
+      <Heading as='h2' size='4xl' >
+      {title}
+      </Heading>
+    </Center>
   )
 }
